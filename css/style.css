@@ -1,0 +1,410 @@
+:root {
+    --main-color: #64a19d;
+    --dark-bg: #0b0b0b;
+    --light-color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.0625em;
+    background-color: #000;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+section {
+    display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Start Navbar */
+.navbar {
+    background: var(--dark-bg);
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: var(--light-color) !important;
+}
+
+.navbar .navbar-toggler {
+    color: var(--light-color);
+    font-size: 1.2rem;
+    border-color: var(--light-color);
+}
+
+.navbar .navbar-toggler {
+    box-shadow: none;
+}
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border-color: darkgray;
+}
+
+/* End Navbar */
+/* Start Header */
+.header {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../Images/bg-masthead.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.header h1 {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    display: block;
+}
+
+.header h2 {
+    max-width: 30rem;
+    font-size: 1.5rem;
+}
+
+.header .btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 10%) !important;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    padding: 1.1rem 1.5rem;
+    color: var(--light-color);
+    background-color: var(--main-color);
+}
+
+.header .btn:hover {
+    opacity: 0.8;
+}
+
+/* End Header */
+
+/* Start About */
+main .about {
+    position: relative;
+    bottom: 5rem;
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+main .about .container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main .about p {
+    margin-bottom: 5rem;
+}
+
+main .about p a {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+main .about img {
+    width: 82%;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* End About */
+
+/* Start Projects */
+main .projects {
+    position: relative;
+    bottom: 5rem;
+    padding: 10rem 0;
+}
+
+main .projects .container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main .projects .container .featured {
+    width: 100%;
+    border-left: 0.5rem solid var(--main-color);
+}
+
+
+main .projects .container .project-info {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+/* End Projects */
+
+/* Start Contact */
+main .sign-up {
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../Images/bg-signup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    position: relative;
+    bottom: 5rem;
+}
+
+main .sign-up form {
+    display: block;
+}
+
+main .sign-up form .form-control {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: var(--light-color);
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+main .sign-up input {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+    padding: 1.25rem 2rem;
+    height: auto;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+    margin: 0;
+}
+
+main .sign-up .btn {
+    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 10%) !important;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    border: 0;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.7;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.25rem;
+    -webkit-border-radius: 0.25rem;
+    -moz-border-radius: 0.25rem;
+    -ms-border-radius: 0.25rem;
+    -o-border-radius: 0.25rem;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    padding: 1.1rem 1.5rem;
+    color: var(--light-color);
+    background-color: var(--main-color);
+}
+
+main .sign-up .btn:hover {
+    opacity: 0.8;
+}
+
+main .contact {
+    position: relative;
+    bottom: 5rem;
+    padding-top: 5rem;
+}
+
+main .contact .card {
+    border: 0;
+    border-bottom: 0.25rem solid var(--main-color);
+}
+
+main .contact .card .card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+
+main .contact .card .card-body .small a {
+    color: var(--main-color);
+}
+
+main .contact .card h4 {
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+}
+
+main .contact .card hr {
+    border-color: var(--main-color);
+    border-width: 0.25rem;
+    width: 3rem;
+}
+
+main .contact .social {
+    margin-top: 5rem;
+}
+
+main .contact .social a {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: #777;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+main .contact .social a:hover {
+    color: var(--light-color);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* End Contact */
+/* Start Footer */
+footer p a {
+    color: #666;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+footer p a:hover {
+    color: var(--main-color);
+}
+
+/* End Footer */
+/* Start Media Query */
+@media(max-width: 617px) {
+    .header h1 {
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+    }
+
+    .header h2 {
+        max-width: 15rem;
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 992px) {
+    main .projects .container .featured {
+        border-left: none;
+    }
+
+    main .sign-up .container .row form .row {
+        flex-direction: column;
+        gap: 2.1rem;
+    }
+}
+
+/* End Media Query */
